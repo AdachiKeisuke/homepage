@@ -1,9 +1,68 @@
 @charset "UTF-8";
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1{
     text-align: center;
+    font-size: 70px;
+}
+
+h3{
+    font-size: 30px;
 }
 
 ruby{
     font-size: 30px;
+}
+
+body{
+    background-image: url("img/japan.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+table{
+    margin: 0 auto;
+    width: 1200px;
+    border: solid 3px black;
+}
+
+th{
+    border: solid 5px black;
+    width: 400px;
+    font-size: 30px;
+}
+
+td{
+    border: solid 5px black;
+    color: slateblue;
+    font-size: 30px;
+}
+
+caption{
+    font-weight: bold;
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+
+.life{
+   border-top: dashed 10px black;
+   margin-bottom: 150px;
+   padding-top: 50px;   
+}
+
+p{
+    color: slateblue;
+    font-size: 25px;
+}
+
+.kakonokeireki{
+    display: block;
+    text-align: center;
+}
+
+.artist{
+    color: rgb(0, 132, 255);
 }
