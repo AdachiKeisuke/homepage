@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+html{
+    scroll-behavior: smooth;
+}
+
+ruby{
+    font-size: 25px;
+}
+
+body{
+    width: 1250px;
+    background-image: url(./img/kabe.jpg);
+}
+
+h1{
+    background-color: azure;
+    border-radius: 30% 0% 30% 0% / 30% 0% 30% 0% ;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contents{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 30px;
+    
+}
+
+.contents div{
+    width: 31%;
+    background-color: cadetblue;
+    border-radius: 10px;
+}
+
+/* .contents div:hover{
+    box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+	transform: translateY(-4px);
+} */
+
+#simei,#syumi,#like2,#like4{
+    border-radius: 0% 100% 0% 100% / 0% 100% 100% 100%;
+}
+
+#from,#like1,#like3{
+    border-radius: 100% 0% 100% 100% / 100% 0% 100% 0% ;
+}
+
+#simei{
+    background: linear-gradient(127.52990112084763deg, rgba(197, 235, 218,1) 45.38671875%,rgba(197, 235, 218,1) 46.435546875%,rgba(84, 222, 96,1) 73.35546875%);
+}
+
+#from{
+    background: linear-gradient(50.41640204267492deg, rgba(180, 104, 227,1) 28.294921874999993%,rgba(240, 230, 247,1) 61.55924479166666%,rgba(240, 230, 247,1) 62.12304687499999%);
+}
+
+#syumi{
+    background: linear-gradient(111.20516565821163deg, rgba(245, 203, 203,1) 29.6328125%,rgba(244, 202, 202,1) 29.6328125%,rgba(232, 65, 65,1) 86.8203125%);
+}
+
+#like1{
+    background: linear-gradient(66.53849951021539deg, rgba(48, 141, 255,1) 18.564453125000007%,rgba(178, 111, 247,1) 75.986328125%,rgba(179, 111, 247,1) 75.986328125%);
+}
+
+#like2{
+    background: linear-gradient(108.87803644055668deg, rgba(242, 114, 208,1) 38.169921875%,rgba(242, 201, 239,1) 77.466796875%);
+}
+
+#like3{
+    background: linear-gradient(66.03750994385791deg, rgba(203, 222, 245,1) 27.099609375%,rgba(202, 221, 244,1) 27.099609375%,rgba(65, 140, 232,1) 79.833984375%);
+}
+
+#like4{
+    background: linear-gradient(-246.51686270667358deg, rgba(247, 240, 40,1) 17.189453125000007%,rgba(245, 254, 218,1) 70.236328125%,rgba(245, 255, 219,1) 70.236328125%);
+}
+
+.kitakami{
+    width: 30%;
+    height: auto;
+}
+
+.jan{
+    border-radius: 0% 0% 30% 0% / 0% 100% 17% 0%  ;
+    width: 175px;
+    height: auto;
+}
+
+.bando{
+    height: 220px;
+    width: auto;
+    padding-left: 40px;
+}
+
+.anime{
+    height: 210px;
+    width: auto;
+}
+
+.poke{
+    height: 230px;
+    width: auto;
+    /* border-radius: 0% 4% 0% 43% / 0% 0% 0% 57% ; */
+}
+
+#mokuji{
+    /* border: 3px solid #708D81; */
+    border-radius: 100% 0% 100% 100% / 100% 0% 100% 0% ;
+    text-align: center;
+    background-color: aliceblue;
+    line-height: 30px;
+    /* margin: 10px; */
+}
+
+#mokuji a{
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 5px 20px;
+}
+
+#top{
+    border-radius: 100% 0% 100% 100% / 100% 0% 100% 0% ;
+    background-color: white;
+}
+
+.animation{
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    width: 128px;
+}
+  
+.keyframe1{
+    animation-name: anim_v;
+}
+  
+@keyframes anim_v {
+    0% {
+      transform: translate(0, 0px);
+    }
+    100% {
+      transform: translate(0, 100px);
+    }
+}
+
+.climb{
+    height: 150px;
+    width: auto;
+}
+
+#top a{
+    text-decoration: none;
+}
+#top1,#top2{
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: 30px auto;
+    line-height: 30px;
+    border-radius: 10px;
+}
+
+#top1{
+    border: 3px solid red;
+}
+
+#top2{
+    border: 3px solid aquamarine;
+    
+}
