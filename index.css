@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@1,300&display=swap');
+/* ロード画面 */
+#wrap{
+    position: fixed;
+    top: 0; 
+   left: 0; 
+   width: 100%; 
+   height: 100%; 
+   background: rgb(39, 39, 39); 
+   display: flex; 
+   flex-direction: column; 
+   justify-content: center; 
+   align-items: center; 
+   z-index: 9999;
+   font-size: 40px;
+}
+
+#typewriter{
+    color: white;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+.click{
+    color: green;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+#typewriter::after {
+    content: "|";
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.wraphide{
+    transition: 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* ロード画面終了 */
+
+body{
+    background-image: url(./img/back1.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 140px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+#con div{
+    width: 290px;
+    height: 290px;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color: aliceblue;
+}
+
+.haruhi{
+    background-color: rgba(240, 92, 92, 0);
+}
+
+.haruhi:hover{
+    background-image: url(./img/cort.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    color: rgb(2, 125, 129);
+}
+
+.haruhi img:hover{
+    transform: scale(-1,1);
+}
+
+.keisuke{
+    background-color: rgba(153, 188, 245, 0);
+    border-radius: 30% 0% 0% 0% / 30% 0% 0% 0% ;
+}
+
+.keisuke:hover{
+    color: red;
+    background-image: url(./img/umi.gif);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.keisuke img:hover{
+    animation   : scrollAnime 2s linear infinite;
+}
+
+@keyframes scrollAnime{
+    0% { transform: translateX(30%)}
+  100% { transform: translateX(-20%)}
+}
+
+.nanase{
+    background-color: rgba(192, 235, 112, 0);
+}
+
+.nanase:hover{
+    background-image: url(./img/camera.gif);
+    box-shadow: 0 5px 10px black;
+    transform: translate(0, -40px);
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
+    color: seagreen;
+}
+
+.akira{
+    background-color: rgba(255, 228, 196, 0);
+}
+
+.akira:hover{
+    transform: translate(0, 40px);
+    box-shadow:5px 5px 5px -3px #333, 5px 5px 8px #eee inset;
+    background-image: url(./img/kabe.jpg);
+    color: #330066;
+}
+
+.akira img:hover{
+    animation: scrollAnime2 2s linear infinite;
+}
+
+@keyframes scrollAnime2{
+    0% { transform: translatey(30%)}
+  100% { transform: translatey(-10%)}
+}
+
+img{
+    height: 180px;
+    width: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+
