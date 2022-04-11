@@ -1,0 +1,48 @@
+@charset "utf-8";
+h1{
+	color : black;
+	background : #d1ffd1;
+	width : 100%;
+	border-top : dotted 5px white;
+	border-bottom : dotted 5px white;
+	text-align: center;
+}
+h3{
+	font-size: 40px;
+	color : rgb(35, 102, 61);
+	border : dotted 7px rgb(47, 143, 84);
+	text-align: center;
+}
+h2{
+	text-align: center;
+}
+
+img{
+	border : solid 3px red;
+	/*padding : 5px;*/
+	margin : 0px 10px 0px 3px;
+	text-align: center;
+}
+.mon{
+	/*border : dotted 3px black;
+	margin : 0px 20px 0px 3px;
+	padding : 10px;*/
+	text-align: center;
+}
+
+p{
+	color : black;
+	background : #99FFCC;
+	width : 30%;
+	border-left : dashed 5px white;
+	border-right : dashed 5px white;
+}
+
+body{
+	background-image: url(img/haikei.jpg);
+	background-size: contain;
+}
+table{
+	margin: auto;
+	text-align: center;
+}
