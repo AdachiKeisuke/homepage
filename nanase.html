@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <link rel="stylesheet" href="style.css">
-        <title>自己紹介</title>
+        <link rel="stylesheet" href="nanase.css">
+        <title>大上七星</title>
+        <h3>自己紹介</h3>
         </head>
     <body>
-        <h3>氏名</h3>
-        <p>大上　七星</p>
-        <h3>出身地</h3>
-        <p>宮古市</p>
-        <h3>趣味・特技</h3>
-        <p>釣り・サッカー</p>
-        <h3>誕生日</h3>
-        <p>6月25日</p>
-        <h3></h3>
-        <p></p>
+       
+        <div class="tabbox">
+            <input type="radio" name="tabset" id="tabcheck1" checked><label for="tabcheck1" class="tab">名前・生年月日</label>
+            <input type="radio" name="tabset" id="tabcheck2"        ><label for="tabcheck2" class="tab">出身地</label>
+            <input type="radio" name="tabset" id="tabcheck3"        ><label for="tabcheck3" class="tab">好きな漫画</label>
+            <input type="radio" name="tabset" id="tabcheck4"        ><label for="tabcheck4" class="tab">好きな食べ物・嫌いな食べ物</label>
+            <input type="radio" name="tabset" id="tabcheck5"        ><label for="tabcheck5" class="tab">趣味・特技</label>
+
+            <div class="tabcontent" id="tabcontent1">
+                <h3>名前</h3>
+                <h2>大上　七星</h2>
+                <h3>生年月日</h3>
+                <h2>2002/06/25</h2>
+            </div>
+            <div class="tabcontent" id="tabcontent2">
+                <h3>出身地</h3>
+                <h2>岩手県　宮古市</h2>
+                <p>三陸復興国立公園・三陸ジオパークの中心に位置する浄土ヶ浜は、宮古の代表的な景勝地です</p>
+                
+                <p><img src="img/miyako.jpg"width="500" height="300" alt="">
+                
+            </div>
+            <div class="tabcontent" id="tabcontent3">
+                <h3>好きな漫画</h3>
+                <ul>
+                    <li><img src = "img/naruto.jpg" width="300" height="200" class="topic"alt=""></li>
+                
+                
+                    <li><img src = "img/one.jpg"width="300" height="200" class="topic"alt=""></li>
+               
+                
+                    <li><img src = "img/tokyo.jpg"width="300" height="200" class="topic"alt=""></li>
+                </ul>
+            </div>
+            <div class="tabcontent" id="tabcontent4">
+                <h3>好きな食べ物</h3>
+                <h2>カレーライス</h2>
+                <h3>嫌いな食べ物</h3>
+                <h2>キノコ類</h2>
+            </div>
+            <div class="tabcontent" id="tabcontent5">
+                <h3>趣味</h3>
+                <h2>釣り、マンガ、アニメ</h2>
+                <h3>特技</h3>
+                <h2>サッカー</h2>
+            </div>
+         </div>
     </body>
 </html>
